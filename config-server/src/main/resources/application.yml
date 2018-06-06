@@ -1,0 +1,24 @@
+spring:
+  profiles:
+    active: subversion
+  cloud:
+    config:
+      server:
+        svn:
+          uri: xxxx
+          username: xxxx
+          password: xxxx
+  application:
+    name: config-server
+server:
+  port: 9000
+eureka:
+  client:
+    fetch-registry: false
+    register-with-eureka: true
+    service-url:
+      defaultZone: ${EUREKA_SERVER_LIST}
+  instance:
+    prefer-ip-address: true
+    lease-renewal-interval-in-seconds: 15
+    lease-expiration-duration-in-seconds: 45
