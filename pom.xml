@@ -298,9 +298,9 @@
                     <artifactId>maven-release-plugin</artifactId>
                     <version>2.5.2</version>
                     <configuration>
-                        <branchBase>http://118.178.138.63/repos/ulinkcare/branches/ulinkcare-lecycle/ulinkcare</branchBase>
+                        <branchBase>http://localhost/repos/ulinkcare/branches/ulinkcare-lecycle/ulinkcare</branchBase>
                         <branchName>${project.version}-branch</branchName>
-                        <tagBase>http://118.178.138.63/repos/ulinkcare/tags/ulinkcare-lecycle/ulinkcare</tagBase>
+                        <tagBase>http://localhost/repos/ulinkcare/tags/ulinkcare-lecycle/ulinkcare</tagBase>
                         <remoteTagging>false</remoteTagging>
                         <suppressCommitBeforeTag>false</suppressCommitBeforeTag>
                         <resume>true</resume>
