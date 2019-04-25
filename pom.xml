@@ -16,6 +16,7 @@
         <module>config-server</module>
         <module>admin-server</module>
         <module>hystrix-server</module>
+        <module>base</module>
     </modules>
 
     <properties>
@@ -323,19 +324,6 @@
                             <version>1.2.4.RELEASE</version>
                         </dependency>
                     </dependencies>
-                </plugin>
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-release-plugin</artifactId>
-                    <version>2.5.2</version>
-                    <configuration>
-                        <branchBase>http://localhost/repos/ulinkcare/branches/ulinkcare-lecycle/ulinkcare</branchBase>
-                        <branchName>${project.version}-branch</branchName>
-                        <tagBase>http://localhost/repos/ulinkcare/tags/ulinkcare-lecycle/ulinkcare</tagBase>
-                        <remoteTagging>false</remoteTagging>
-                        <suppressCommitBeforeTag>false</suppressCommitBeforeTag>
-                        <resume>true</resume>
-                    </configuration>
                 </plugin>
                 <plugin>
                     <artifactId>maven-deploy-plugin</artifactId>

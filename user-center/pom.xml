@@ -12,11 +12,11 @@
     <artifactId>user-center</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>user-center-entity</module>
-        <module>user-center-sever</module>
-        <module>user-center-client</module>
         <module>user-center-api</module>
+        <module>user-center-client</module>
+        <module>user-center-entity</module>
         <module>user-center-service</module>
+        <module>user-center-server</module>
     </modules>
 
 
