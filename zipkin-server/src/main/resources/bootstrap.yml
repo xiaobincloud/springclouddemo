@@ -28,7 +28,7 @@ spring:
   application:
     name: zipkin-server
   datasource:
-    url: jdbc:mysql://localhost:3306/zpkin
+    url: jdbc:mysql://localhost:3306/zipkin
     username: root
     password: 123
     initialize: true
@@ -38,3 +38,7 @@ sleuth:
 zipkin:
   storage:
     type: mysql
+
+info.groupId: @project.groupId@
+info.artifactId: @project.artifactId@
+info.version: @project.version@
