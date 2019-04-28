@@ -7,7 +7,6 @@ import java.util.regex.PatternSyntaxException;
 /**
  * 手机号码验证
  * @author xiaobin
- * 成都友漾健康科技有限公司
  * Created by xiaobin on 2017年1月9日
  * Copyright (c) 2016-2019
  */

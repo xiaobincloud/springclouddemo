@@ -9,7 +9,6 @@ import java.util.List;
 
 /**
  * @author xiaobin
- * 成都友漾健康科技有限公司
  * Created by xiaobin on 2017/7/20
  * Copyright (c) 2016-2019
  */

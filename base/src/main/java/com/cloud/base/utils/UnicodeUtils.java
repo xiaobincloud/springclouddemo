@@ -4,12 +4,16 @@ import org.apache.commons.lang3.StringUtils;
 
 /**
  * @author xiaobin
- * 成都友漾健康科技有限公司
  * Created by xiaobin on 2017/6/12
  * Copyright (c) 2016-2019
  */
 public class UnicodeUtils {
 
+    /**
+     * Unicode还原字符串
+     * @param str
+     * @return
+     */
     public static String convertUnicodeToNormal(String str) {
         if(StringUtils.isBlank(str)){
             return str;
@@ -29,6 +33,11 @@ public class UnicodeUtils {
         return sb.toString();
     }
 
+    /**
+     * 字符串Unicode编码
+     * @param inStr
+     * @return
+     */
     public static String getStrUnicode(String inStr) {
         StringBuilder unicode = new StringBuilder();
         char c;
@@ -55,9 +64,5 @@ public class UnicodeUtils {
             }
         }
         return (new String(unicode));
-    }
-
-    public static void main(String[] args) {
-        System.out.println(convertUnicodeToNormal("\\u733f\\ud83e\\udd17\\ud83e\\udd17\\ud83e\\udd17"));
     }
 }

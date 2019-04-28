@@ -1,7 +1,3 @@
-/*
- * Copyright (c) 2013-2015, 成都友漾健康科技有限公司
- * Created by qingyu on 2017/2/9.
- */
 package com.cloud.base.utils;
 
 import javax.imageio.ImageIO;

@@ -6,7 +6,6 @@ import java.util.Map;
 
 /**
  * @author xiaobin
- * 成都友漾健康科技有限公司
  * Created by xiaobin on 2017/9/25
  * Copyright (c) 2016-2019
  */
