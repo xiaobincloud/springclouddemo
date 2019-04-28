@@ -7,7 +7,6 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 /**
  * @author xiaobin
- * 成都友漾健康科技有限公司
  * Created by xiaobin on 2018/6/6
  * Copyright (c) 2016-2019
  */

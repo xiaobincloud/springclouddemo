@@ -7,7 +7,6 @@ import org.springframework.cloud.config.server.EnableConfigServer;
 
 /**
  * @author xiaobin
- * 成都友漾健康科技有限公司
  * Created by xiaobin on 2018/6/6
  * Copyright (c) 2016-2019
  */
