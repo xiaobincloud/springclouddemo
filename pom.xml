@@ -50,6 +50,7 @@
         <maven.compiler.compilerVersion>1.8</maven.compiler.compilerVersion>
         <zxing.core>3.2.0</zxing.core>
         <nekohtml>1.9.22</nekohtml>
+        <swagger-bootstrap-ui>1.8.8</swagger-bootstrap-ui>
     </properties>
 
     <scm>
@@ -204,6 +205,11 @@
                 <groupId>io.springfox</groupId>
                 <artifactId>springfox-swagger-ui</artifactId>
                 <version>${springfox.swagger2}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.xiaoymin</groupId>
+                <artifactId>swagger-bootstrap-ui</artifactId>
+                <version>${swagger-bootstrap-ui}</version>
             </dependency>
             <dependency>
                 <groupId>net.logstash.logback</groupId>

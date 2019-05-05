@@ -1,0 +1,24 @@
+server:
+  port: 8282
+spring:
+  application:
+      name: order-center-server
+#  cloud:
+#    config:
+#      enabled: true
+#      discovery:
+#        enabled: true
+#        service-id: config-center
+eureka:
+  instance:
+    non-secure-port: ${server.port}
+    preferIpAddress: true
+    metadata-map:
+      cluster: ${spring.application.name}
+    instance-id: ${spring.cloud.client.ipAddress}:${server.port}
+  client:
+      registerWithEureka: true
+      fetchRegistry: true
+      serviceUrl:
+        defaultZone: ${EUREKA_SERVER_LIST}
+
