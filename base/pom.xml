@@ -11,6 +11,10 @@
 
     <artifactId>base</artifactId>
     <packaging>jar</packaging>
+    <name>base</name>
+    <groupId>springclouddemo</groupId>
+    <version>1.0-SNAPSHOT</version>
+    <description>工具</description>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
