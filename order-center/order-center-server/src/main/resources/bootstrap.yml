@@ -1,14 +1,16 @@
 server:
-  port: 8282
+  port: 8289
 spring:
+  profiles:
+    active: dev
   application:
       name: order-center-server
-#  cloud:
-#    config:
-#      enabled: true
-#      discovery:
-#        enabled: true
-#        service-id: config-center
+  cloud:
+    config:
+      enabled: true
+      discovery:
+        enabled: true
+        service-id: config-server
 eureka:
   instance:
     non-secure-port: ${server.port}
@@ -21,4 +23,3 @@ eureka:
       fetchRegistry: true
       serviceUrl:
         defaultZone: ${EUREKA_SERVER_LIST}
-

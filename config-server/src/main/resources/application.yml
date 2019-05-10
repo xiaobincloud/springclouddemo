@@ -1,13 +1,11 @@
 spring:
-  profiles:
-    active: subversion
   cloud:
     config:
       server:
-        svn:
-          uri: xxxx
-          username: xxxx
-          password: xxxx
+        git:
+          uri: https://github.com/xiaobincloud/config-repo.git
+          username: 29ac8e182f6be9403a26e64e49a27f79b932ea1f384862011b9baace6f3a920fa73dcd8d33d43b7cbf873ea414395c65
+          password: a42beb0d606ca887045da13a5b359c0e2b23628047d4c27f39fe4165d63daf22
   application:
     name: config-server
 server:
@@ -22,3 +20,12 @@ eureka:
     prefer-ip-address: true
     lease-renewal-interval-in-seconds: 15
     lease-expiration-duration-in-seconds: 45
+    non-secure-port: ${server.port}
+    metadata-map:
+      cluster: ${spring.application.name}
+    instance-id: ${spring.cloud.client.ipAddress}:${server.port}
+# 使用JCE进行用户名密码加密Key
+# 加密路径http://localhost:9000/encrypt
+# 解密路径http://localhost:9000/decrypt
+encrypt:
+  key: key2

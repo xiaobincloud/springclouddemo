@@ -1,24 +1,25 @@
 server:
   port: 8189
 spring:
+  profiles:
+    active: dev
   application:
     name: user-center-server
-#  cloud:
-#    config:
-#      enabled: true
-#      discovery:
-#        enabled: true
-#        service-id: config-center
+  cloud:
+    config:
+      enabled: true
+      discovery:
+        enabled: true
+        service-id: config-server
 eureka:
   instance:
-    # 获取该实例应该接收通信的非安全端口
     non-secure-port: ${server.port}
     preferIpAddress: true
     metadata-map:
       cluster: ${spring.application.name}
     instance-id: ${spring.cloud.client.ipAddress}:${server.port}
   client:
-      registerWithEureka: true
-      fetchRegistry: true
-      serviceUrl:
-        defaultZone: ${EUREKA_SERVER_LIST}
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: ${EUREKA_SERVER_LIST}

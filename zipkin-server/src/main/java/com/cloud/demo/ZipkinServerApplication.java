@@ -11,9 +11,8 @@ import javax.sql.DataSource;
 
 /**
  * @author xiaobin
- * 成都友漾健康科技有限公司
- * Created by xiaobin on 2018/6/6
- * Copyright (c) 2016-2019
+ * Created by xiaobin on 2019/5/10
+ * Copyright (c) 2019-2021
  */
 @SpringBootApplication
 @EnableZipkinServer

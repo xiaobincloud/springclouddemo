@@ -1,5 +1,5 @@
 server:
-  port: 8883
+  port: 9411
 eureka:
   client:
     registerWithEureka: true
@@ -38,7 +38,3 @@ sleuth:
 zipkin:
   storage:
     type: mysql
-
-info.groupId: @project.groupId@
-info.artifactId: @project.artifactId@
-info.version: @project.version@
